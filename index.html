@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收集表</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            background: #f6f8fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 32px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+        }
+        th, td {
+            padding: 12px 8px;
+            text-align: left;
+        }
+        th {
+            background: #e9ecef;
+            color: #222;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background: #f4f6fa;
+        }
+        tr.owned {
+            background: #d4f8e8;
+        }
+        td.owned {
+            color: #2e8b57;
+            font-weight: bold;
+        }
+        td.not-owned {
+            color: #b22222;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>物品/坐骑收集表</h1>
+        <table id="mountTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>物品/坐骑</th>
+                    <th>出处</th>
+                    <th>是否拥有</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 数据行将由JS插入 -->
+            </tbody>
+        </table>
+    </div>
+    <script>
+        // 数据数组
+        const data = [
+            { id: 1, name: '奥的灰烬', source: '风暴要塞 - 凯尔萨斯·逐日者', },
+        ];
+
+        // 已拥有的id
+        const ownedIds = [];
+
+        const tbody = document.querySelector('#mountTable tbody');
+
+        data.forEach(item => {
+            const isOwned = ownedIds.includes(item.id);
+            const tr = document.createElement('tr');
+            if (isOwned) tr.classList.add('owned');
+            tr.innerHTML = `
+                <td>${item.id}</td>
+                <td>${item.name}</td>
+                <td>${item.source}</td>
+                <td class="${isOwned ? 'owned' : 'not-owned'}">${isOwned ? '已拥有' : '未拥有'}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    </script>
+</body>
+</html> 
