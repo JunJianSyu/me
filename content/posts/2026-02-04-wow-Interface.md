@@ -1,9 +1,9 @@
 ---
-title: "WoWInterface"
+title: "魔兽世界插件编写教程"
 date: "2026-02-04"
 category: "技术"
 tags: ["Lua", "wow"]
-excerpt: "魔兽世界插件教程"
+excerpt: "魔兽世界"
 featured: true
 ---
 
