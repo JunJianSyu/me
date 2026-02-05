@@ -1,5 +1,5 @@
 ---
-title: "GamepadKeyMapper"
+title: "游戏键位映射程序详解"
 date: "2026-01-30"
 category: "技术"
 tags: ["Go", "Xbox"]
