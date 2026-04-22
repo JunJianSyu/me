@@ -1,4 +1,11 @@
-# Go + MCP Server 架构与开发指南
+---
+title: "Go + MCP Server 架构与开发指南"
+date: "2026-04-22"
+category: "技术"
+tags: ["Go", "MCP"]
+excerpt: "GO + MCP Server 开发指南"
+featured: true
+---
 
 > 本文档是一份**项目无关的通用指南**，面向：
 >
