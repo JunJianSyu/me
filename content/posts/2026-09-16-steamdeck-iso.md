@@ -1,3 +1,12 @@
+---
+title: "Steam Deck游戏精简系统"
+date: "2026-09-16"
+category: "技术"
+tags: ["x-lite"]
+excerpt: "Steam Deck游戏精简系统安装教程"
+featured: true
+---
+
 下面是一份完整的 X-Lite 26H1 在 Steam Deck 上的下载安装指南，以及装完后的必装软件清单。
 
 ---
