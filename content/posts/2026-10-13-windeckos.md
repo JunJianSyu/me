@@ -1,4 +1,11 @@
 ---
+title: "WinDeckOS系统"
+date: "2026-10-13"
+category: "技术"
+tags: ["os"]
+excerpt: "WinDeckOS系统系统安装教程"
+featured: true
+---
 
 ## WinDeckOS 25H2 完整安装指南
 
